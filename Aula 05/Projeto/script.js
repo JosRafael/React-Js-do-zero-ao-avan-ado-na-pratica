@@ -10,7 +10,7 @@ let nome = 'Matheus';
 
 // console.log(nome.endsWith('sa'));
 
-if(nome.endsWith('s')){
+if(nome.startsWith('Mat')){
   console.log('O *S* se escontra na lista de nomes');
 }else{
   console.log('O *S* não se escontra na lista de nomes');
