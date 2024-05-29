@@ -1,39 +1,19 @@
-//Este é meu nome
-//var nome = "Rafael";
+const lista = [1, 2, 3, 4, 5, 6];
 
-//função entrar
-function entrar() {
-  var area = document.getElementById("area");
-  var texto = prompt("Qual o seu nome?");
+const novaLista = lista.map(function (item, index) {
+  return item + index;
+});
 
-  if (texto === "" || texto === null) {
-    alert("Digite seu nome novamente!");
-    area.innerHTML = "Bem vindo ... ";
-  } else {
-    area.innerHTML = "Bem vindo " + texto;
-  }
-}
-//função entrar 2
-function entrar2(nome) {
-  var area = document.getElementById("area2");
-  var texto = prompt("Qual o seu sobrenome?");
+console.log(novaLista);
 
-  if (texto === "" || texto === null) {
-    alert("Digite seu sobrenome");
-    area.innerHTML = "Bem vindo...";
-  } else {
-    area.innerHTML = "Bem vindo..." + nome + " " + texto;
-  }
-}
-//função entrar 3
-function entrar3(nome) {
-  var area = document.getElementById("area3");
-  var texto = prompt("Qual a sua idade?");
+const soma = lista.reduce(function (total, proximo) {
+  return total + proximo;
+});
 
-  if (texto === "" || texto === null) {
-    alert("Digite sua idade");
-    area.innerHTML = "Bem vindo...";
-  } else {
-    area.innerHTML = "Me chamo " + nome + " " + "e tenho" + texto + " anos...";
-  }
-}
+
+console.log(soma);
+
+const find = lista.find(function (item, index) {
+    return item === 66;
+});
+console.log(find);
