@@ -2,11 +2,16 @@
 //endsWith
 // startsWith
 
-let nomes = ['Matheus', 'Lucas', 'João']
+//let nomes = ['Matheus', 'Lucas', 'João']
 
+// console.log(nomes.includes('Luca'));
 
-if(nomes.includes('Lucas')){
-  console.log('Lucas está na lista');
+let nome = 'Matheus';
+
+// console.log(nome.endsWith('sa'));
+
+if(nome.endsWith('s')){
+  console.log('O *S* se escontra na lista de nomes');
 }else{
-  console.log('Lucas não está na lista');
+  console.log('O *S* não se escontra na lista de nomes');
 }
